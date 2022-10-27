@@ -1,0 +1,9 @@
+ create table postac (id_postaci int NOT NULL  auto_increment PRIMARY KEY , nazwa varchar(40), rodzaj enum('wiking','ptak','kobieta'), data date , wiek int UNSIGNED);
+ 
+INSERT INTO postac VALUES (0,'Bjorn','wiking','1590-02-02','120');
+INSERT INTO postac VALUES (0,'drozd','ptak','1590-02-02','120');
+INSERT INTO postac VALUES (0,'Tesciowa','kobieta','1790-02-02','88');
+
+CREATE TABLE  walizka (id_walizki int NOT NULL  auto_increment PRIMARY KEY , pojemnosc int  UNSIGNED, kolor enum('rozowy','czerwony','teczowy','zolty'), id_wlasciciela int, FOREIGN KEY (id_wlasciciela)  REFERENCES postac(id_postaci) ON DELETE CASCADE;
+
+
