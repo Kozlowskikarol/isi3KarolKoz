@@ -1,0 +1,5 @@
+1 create table izba ( adres_budynku varchar(40) NOT NULL, nazwa_izby varchar(40) NOT NULL , metraz int UNSIGNED, wlasciciel int, FOREIGN KEY(wlasciciel) REFERENCES postac(id_postaci), PRIMARY KEY (adres_budynku, nazwa_izby));
+2 ALTER TABLE IZBA ADD Kolor varchar(40) default 'czarny'   Alter Table izba modify kolor varchar(40) After metraz;
+3 AlTER TABLE Izba ADD Spizarnia varchar(40) 
+4  create table przewory ( id_przetworu int , rok_produkcji DATE DEFAULT(1654) , id_wykonawcy int ,  zawartosc varchar(40) , dodatek varchar(40) default('papryczka chilli') , id_konsumenta int , FOREIGN KEY(id_wykonawcy , id_konsumenta) REFERENCES postac(postac_id , PRIMARY KEY(id_przetworu));
+	
