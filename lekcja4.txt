@@ -1,0 +1,10 @@
+zad 1 
+a)
+SELECT AVG(WAGA) from kreatura where rodzaj='wiking';
+
+b)
+ select rodzaj ,AVG(waga), count(idKreatury) FROM kreatura GROUP BY rodzaj
+
+c)SELECT rodzaj,AVG(2022-YEAR(dataUr)) FROM kreatura GROUP BY rodzaj;
+zad 2 
+se
