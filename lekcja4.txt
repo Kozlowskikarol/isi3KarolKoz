@@ -7,4 +7,8 @@ b)
 
 c)SELECT rodzaj,AVG(2022-YEAR(dataUr)) FROM kreatura GROUP BY rodzaj;
 zad 2 
-se
+a) SELECT rodzaj, SUM(waga) FROM zasob group by rodzaj;
+b) ELECT rodzaj, AVG(waga) FROM zasob group by nazwa HAVING SUM(waga) > 10 AND SUM(ilosc)>=4;
+c) ELECT COUNT(nazwa) FROM zasob GROUP BY rodzaj HAVING COUNT(nazwa)>1; SELECT COUNT(nazwa) FROM zasob GROUP BY rodzaj HAVING COUNT(nazwa)>1;
+
+zad 3 
